@@ -7,4 +7,4 @@ Future modifications :
 - Implement candy counter;
 - Add UI tutorial animation (to encourage the user clicking on dog's paws)...
 
-The dog image that I modified for my project : Free images by <a href="https://heypik.com" >https://heypik.com</a>
+The <a href="https://heypik.com/images/cute-cartoon-dog_7SU44FX.html?keyword=cute-cartoon-dog">dog image</a> that I modified for my project : Free images by <a href="https://heypik.com" >https://heypik.com</a> 
