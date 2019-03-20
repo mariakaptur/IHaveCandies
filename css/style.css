@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Mallanna', sans-serif;
+    color: #404040;
+    background-color: #f7f7f7;
+}
+
+h1{
+
+    font-family: 'Quando', serif;
+    font-weight: normal;
+}
+
+#printResult {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+span, h2 {
+    font-size: 1.8rem;
+    padding-bottom: 0;
+}
+
+#character{
+    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.imageStatic{
+    width: 400px;
+    content: url("../img/static.png");
+    text-align: center;
+}
+
+
+.imageShame {
+    width: 400px;
+    content: url("../img/none.png");
+    text-align: center;
+}
+
+.imageHappy {
+    width: 400px;
+    content: url("../img/both.png");
+    text-align: center;
+}
+
+#hands{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 400px;
+    height: 100%;
+    top: 350px;
+    z-index: 1;
+    position: relative;
+}
+.hands div {
+    background-color: transparent;
+    opacity: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+
+}
+#leftHand {
+    margin-right: 80px;
+    content: url("../img/candy_left.png");
+    opacity: 0;
+    z-index: 2;
+}
+
+#rightHand{
+    margin-left: 80px;
+    content: url("../img/candy_right.png");
+    opacity: 0;
+    z-index: 2;
+}
+
+#leftHand.handChanged {
+    opacity: 1;
+    transition: opacity 1000ms;
+ }
+
+#rightHand.handChanged {
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+
+#rightHand{
+    margin-left: 80px;
+
+}
+
+#button{
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: salmon;
+    color: #fff;
+    font-family: 'Mallanna', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 2rem;
+    border: none;
+    padding: 10px 15px;
+}
+
+#button:hover{
+    background-color: #dc7068;
+    color: #e0e2d8;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 10000ms;
+}
+
+
+@keyframes flickerAnimation {
+    0%   { opacity:0.5; }
+    50%  { opacity:0; }
+    100% { opacity:0.5; }
+}
+@-o-keyframes flickerAnimation{
+    0%   { opacity:0.5; }
+    50%  { opacity:0; }
+    100% { opacity:0.5; }
+}
+@-moz-keyframes flickerAnimation{
+    0%   { opacity:0.5; }
+    50%  { opacity:0; }
+    100% { opacity:0.5; }
+}
+@-webkit-keyframes flickerAnimation{
+    0%   { opacity:0.5; }
+    50%  { opacity:0; }
+    100% { opacity:0.5; }
+}
+#leftHand.missingCandyLeft {
+    content: url("../img/candy_left.png");
+    background-color: transparent;
+    -webkit-animation: flickerAnimation 2s infinite;
+    -moz-animation: flickerAnimation 2s infinite;
+    -o-animation: flickerAnimation 2s infinite;
+    animation: flickerAnimation 2s infinite;
+}
+
+#rightHand.missingCandyRight {
+    content: url("../img/candy_right.png");
+    background-color: transparent;
+    -webkit-animation: flickerAnimation 2s infinite;
+    -moz-animation: flickerAnimation 2s infinite;
+    -o-animation: flickerAnimation 2s infinite;
+    animation: flickerAnimation 2s infinite;
+}
+
+#dogImg.imageShame {
+    -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.2s; /* Firefox < 16 */
+    -ms-animation: fadein 0.2s; /* Internet Explorer */
+    -o-animation: fadein 0.2s; /* Opera < 12.1 */
+    animation: fadein 0.2s;
+
+}
+
+#dogImg.imageHappy {
+    -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.2s; /* Firefox < 16 */
+    -ms-animation: fadein 0.2s; /* Internet Explorer */
+    -o-animation: fadein 0.2s; /* Opera < 12.1 */
+    animation: fadein 0.2s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
