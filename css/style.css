@@ -4,7 +4,7 @@ html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-size: 2rem;
     text-align: center;
     font-family: 'Mallanna', sans-serif;
@@ -12,7 +12,7 @@ body{
     background-color: #f7f7f7;
 }
 
-h1{
+h1 {
 
     font-family: 'Quando', serif;
     font-weight: normal;
@@ -22,12 +22,13 @@ h1{
     font-size: 2.2rem;
     font-weight: bold;
 }
+
 span, h2 {
     font-size: 1.8rem;
     padding-bottom: 0;
 }
 
-#character{
+#character {
     margin-top: -80px;
     display: flex;
     flex-direction: column;
@@ -35,7 +36,8 @@ span, h2 {
 
 
 }
-.imageStatic{
+
+.imageStatic {
     width: 400px;
     content: url("../img/static.png");
     text-align: center;
@@ -54,7 +56,7 @@ span, h2 {
     text-align: center;
 }
 
-#hands{
+#hands {
 
     display: flex;
     flex-direction: row;
@@ -65,6 +67,7 @@ span, h2 {
     z-index: 1;
     position: relative;
 }
+
 .hands div {
     background-color: transparent;
     opacity: 0;
@@ -73,6 +76,7 @@ span, h2 {
     border-radius: 50px;
 
 }
+
 #leftHand {
     margin-right: 80px;
     content: url("../img/candy_left.png");
@@ -80,7 +84,7 @@ span, h2 {
     z-index: 2;
 }
 
-#rightHand{
+#rightHand {
     margin-left: 80px;
     content: url("../img/candy_right.png");
     opacity: 0;
@@ -90,19 +94,19 @@ span, h2 {
 #leftHand.handChanged {
     opacity: 1;
     transition: opacity 1000ms;
- }
+}
 
 #rightHand.handChanged {
     opacity: 1;
     transition: opacity 1000ms;
 }
 
-#rightHand{
+#rightHand {
     margin-left: 80px;
 
 }
 
-#button{
+#button {
     margin-top: 25px;
     border-radius: 5px;
     background-color: salmon;
@@ -114,7 +118,7 @@ span, h2 {
     padding: 10px 15px;
 }
 
-#button:hover{
+#button:hover {
     background-color: #dc7068;
     color: #e0e2d8;
 }
@@ -135,25 +139,53 @@ span, h2 {
 
 
 @keyframes flickerAnimation {
-    0%   { opacity:0.5; }
-    50%  { opacity:0; }
-    100% { opacity:0.5; }
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }
-@-o-keyframes flickerAnimation{
-    0%   { opacity:0.5; }
-    50%  { opacity:0; }
-    100% { opacity:0.5; }
+
+@-o-keyframes flickerAnimation {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }
-@-moz-keyframes flickerAnimation{
-    0%   { opacity:0.5; }
-    50%  { opacity:0; }
-    100% { opacity:0.5; }
+
+@-moz-keyframes flickerAnimation {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }
-@-webkit-keyframes flickerAnimation{
-    0%   { opacity:0.5; }
-    50%  { opacity:0; }
-    100% { opacity:0.5; }
+
+@-webkit-keyframes flickerAnimation {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }
+
 #leftHand.missingCandyLeft {
     content: url("../img/candy_left.png");
     background-color: transparent;
@@ -188,13 +220,22 @@ span, h2 {
     -o-animation: fadein 0.2s; /* Opera < 12.1 */
     animation: fadein 0.2s;
 }
+
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

@@ -9,12 +9,12 @@ function onClickHand(event) {
         hand = 'left';
         leftHand.classList.add('handChanged');
         rightHand.classList.add('missingCandyRight');
-        firingButton.removeEventListener('click', setRocketLaunch);
+        // TODO removeEventListener to block click
+        // TODO remove candy flashing if "You win"
     } else {
         hand = 'right';
         rightHand.classList.add('handChanged');
         leftHand.classList.add('missingCandyLeft');
-
     }
 
     let won = false;
@@ -68,6 +68,7 @@ function onClickHand(event) {
     }
 }
 
+// TODO Implement candy counter
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -92,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     leftHand = document.querySelector('#leftHand');
     rightHand = document.querySelector('#rightHand');
-    dogImgChange = document.querySelector('#dogImgChange');
+    dogImg = document.querySelector('#dogImg');
     printResult = document.querySelector('#printResult');
     explanation = document.querySelector('#explanation');
     printCounter = document.querySelector('#printCounter');
