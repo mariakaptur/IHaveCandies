@@ -5,41 +5,72 @@ var computerDecision;
 
 function onClickHand(event) {
     let hand = '';
-    if (event.target == leftHand) {
+    if (event.target === leftHand) {
         hand = 'left';
-        leftHand.classList.add('handChanged');
-        rightHand.classList.add('missingCandyRight');
-        // TODO removeEventListener to block click
-        // TODO remove candy flashing if "You win"
+
     } else {
         hand = 'right';
-        rightHand.classList.add('handChanged');
-        leftHand.classList.add('missingCandyLeft');
     }
 
     let won = false;
     let msg = '';
 
     explanation.classList.remove('hide');
-    if (computerDecision == 'both') {
+
+    //YOU WIN, BOTH HANDS
+    if (computerDecision === 'both') {
         won = true;
         msg = 'There was a candy in each paw !';
-        dogImg.classList.add('imageHappy')
-        //if ( event.target == )
-        //event.target.classList.add('handChanged');
+        dogImg.classList.add('imageHappy');
 
-    } else if (computerDecision == 'none') {
+        switch (hand) {
+            case 'right':
+                rightHand.classList.add('handChanged');
+                leftHand.classList.add('missingCandyLeft');
+                leftHand.removeEventListener('click', onClickHand);
+                break;
+            case 'left':
+
+                leftHand.classList.add('handChanged');
+                rightHand.classList.add('missingCandyRight');
+                rightHand.removeEventListener('click', onClickHand);
+                break;
+        }
+
+        //SORRY, NO CANDIES
+    } else if (computerDecision === 'none') {
         won = null;
-        msg = 'There were no candies at all !'
+        msg = 'There were no candies at all !';
         rightHand.className = '';
         leftHand.className = '';
         dogImg.classList.add('imageShame');
 
-
-    } else if (computerDecision == hand) {
+        //YOU WIN
+    } else if (computerDecision === hand) {
         won = true;
+        switch (hand){
+            case 'right':
+                rightHand.classList.add('handChanged');
+                leftHand.removeEventListener('click', onClickHand);
+                break;
+            case 'left':
+                leftHand.classList.add('handChanged');
+                rightHand.removeEventListener('click', onClickHand);
+                break;
+        }
+        //YOU LOOSE
     } else {
         msg = 'The candy was in the ' + computerDecision + ' hand';
+        switch (computerDecision) {
+            case 'right':
+                rightHand.classList.add('missingCandyRight');
+                rightHand.removeEventListener('click', onClickHand);
+                break;
+            case 'left':
+                leftHand.classList.add('missingCandyLeft');
+                leftHand.removeEventListener('click', onClickHand);
+                break;
+        }
     }
 
     printResult.classList.remove('hide');
@@ -103,4 +134,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Installation du gestionnaire d'événement au clic sur le canvas
     leftHand.addEventListener('click', onClickHand);
     rightHand.addEventListener('click', onClickHand);
+    leftHand.addEventListener('touch', onClickHand);
+    rightHand.addEventListener('touch', onClickHand);
 });

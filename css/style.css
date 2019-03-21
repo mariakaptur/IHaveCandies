@@ -74,6 +74,10 @@ span, h2 {
     width: 80px;
     height: 80px;
     border-radius: 50px;
+      -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
 }
 
