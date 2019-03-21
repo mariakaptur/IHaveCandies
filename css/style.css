@@ -253,9 +253,13 @@ span, h2 {
     h1 {
         font-size: 2.5rem;
     }
+    h2{
+        font-size: 1.5rem;
+    }
     #printResult, .explanation{
         font-size: 1.7rem;
-        margin-bottom: 5;
+        margin-bottom:5px;
+        margin-top: 0px;
     }
     #printcounter{
         font-size: 1.9rem;
