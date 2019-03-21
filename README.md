@@ -12,4 +12,4 @@ Future modifications :
 - Implement candy counter;
 - Add ontouch event;
 
-The <a href="https://heypik.com/images/cute-cartoon-dog_7SU44FX.html?keyword=cute-cartoon-dog">dog image</a> that I modified for my project : Free images by <a href="https://heypik.com" >https://heypik.com</a> 
+The <a href="https://heypik.com/images/cute-cartoon-dog_7SU44FX.html?keyword=cute-cartoon-dog">dog image</a> that I modified for my project (in Adobe Illustrator) : Free images by <a href="https://heypik.com" >https://heypik.com</a> 
