@@ -298,14 +298,4 @@ span, h2 {
         margin-left: 70px;
     }
 
-    #leftHand.handChanged {
-        opacity: 1;
-        transition: opacity 1000ms;
-    }
-
-    #rightHand.handChanged {
-        opacity: 1;
-        transition: opacity 1000ms;
-    }
-
 }
