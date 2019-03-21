@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
     rightHand = document.querySelector('#rightHand');
     dogImg = document.querySelector('#dogImg');
     printResult = document.querySelector('#printResult');
-    explanation = document.querySelector('#explanation');
+    explanation = document.querySelector('.explanation');
     printCounter = document.querySelector('#printCounter');
     //compteur = document.querySelector('#compteur');
 

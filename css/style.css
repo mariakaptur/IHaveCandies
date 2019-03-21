@@ -19,17 +19,26 @@ h1 {
 }
 
 #printResult {
+    margin-top: 30px;
     font-size: 2.2rem;
     font-weight: bold;
+    margin-bottom: 10px;
+}
+#printCounter {
+    font-weight: bold;
+    font-size: 2rem;
 }
 
+#explanation {
+    margin: 0;
+}
 span, h2 {
     font-size: 1.8rem;
     padding-bottom: 0;
 }
 
 #character {
-    margin-top: -80px;
+    margin-top: -50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,14 +91,14 @@ span, h2 {
 }
 
 #leftHand {
-    margin-right: 80px;
+    margin-right: 100px;
     content: url("../img/candy_left.png");
     opacity: 0;
     z-index: 2;
 }
 
 #rightHand {
-    margin-left: 80px;
+    margin-left: 100px;
     content: url("../img/candy_right.png");
     opacity: 0;
     z-index: 2;
@@ -105,10 +114,6 @@ span, h2 {
     transition: opacity 1000ms;
 }
 
-#rightHand {
-    margin-left: 80px;
-
-}
 
 #button {
     margin-top: 25px;
@@ -242,4 +247,65 @@ span, h2 {
     to {
         opacity: 1;
     }
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    #printResult, .explanation{
+        font-size: 1.7rem;
+        margin-bottom: 5;
+    }
+    #printcounter{
+        font-size: 1.9rem;
+    }
+    #printResult {
+        margin-top: 15px;
+    }
+    #character {
+        margin-top: -60px;
+    }
+
+    .imageStatic {
+        width: 300px;
+    }
+
+
+    .imageShame {
+        width: 300px;
+    }
+
+    .imageHappy {
+        width: 300px;
+    }
+
+    #hands {
+
+        top: 270px;
+    }
+
+    .hands div {
+        width: 70px;
+        height: 70px;
+    }
+
+    #leftHand {
+        margin-right: 70px;
+    }
+
+    #rightHand {
+        margin-left: 70px;
+    }
+
+    #leftHand.handChanged {
+        opacity: 1;
+        transition: opacity 1000ms;
+    }
+
+    #rightHand.handChanged {
+        opacity: 1;
+        transition: opacity 1000ms;
+    }
+
 }
