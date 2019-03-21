@@ -1,6 +1,7 @@
 # GuessWhichHand
-A game made using JavaScript, HTML and CSS. For instance, for desktop only.
+A game made using JavaScript, HTML and CSS. 
 Click on one of the dog's paws to get candies.
+For instance, for desktop only.
 
 Future modifications : 
 - Add UI tutorial animation (to encourage the user clicking on dog's paws);
