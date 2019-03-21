@@ -1,6 +1,6 @@
 # GuessWhichHand
 ## Click on one of the dog's paws to get candies.
-<a href="https://mariekaptur.github.io/GuessWhichHand/">Play the game (pages)</a>
+<a href="https://mariekaptur.github.io/GuessWhichHand/">Play the game (GitHub Pages)</a>
 
 A game made using JavaScript, HTML and CSS. 
 ```
