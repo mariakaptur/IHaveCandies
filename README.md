@@ -1,6 +1,7 @@
 # GuessWhichHand
+##Click on one of the dog's paws to get candies.
+
 A game made using JavaScript, HTML and CSS. 
-Click on one of the dog's paws to get candies.
 For instance, for desktop only.
 
 Future modifications : 
