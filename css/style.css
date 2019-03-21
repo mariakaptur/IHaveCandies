@@ -24,6 +24,7 @@ h1 {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 #printCounter {
     font-weight: bold;
     font-size: 2rem;
@@ -32,6 +33,7 @@ h1 {
 #explanation {
     margin: 0;
 }
+
 span, h2 {
     font-size: 1.8rem;
     padding-bottom: 0;
@@ -46,23 +48,25 @@ span, h2 {
 
 }
 
-.imageStatic {
-    width: 400px;
-    content: url("../img/static.png");
-    text-align: center;
+#titleImg {
+    width: 50px;
 }
 
+.imageStatic, .imageShame, .imageHappy {
+    width: 400px;
+
+}
+
+.imageStatic {
+    content: url("../img/static.png");
+}
 
 .imageShame {
-    width: 400px;
     content: url("../img/none.png");
-    text-align: center;
 }
 
 .imageHappy {
-    width: 400px;
     content: url("../img/both.png");
-    text-align: center;
 }
 
 #hands {
@@ -83,7 +87,7 @@ span, h2 {
     width: 80px;
     height: 80px;
     border-radius: 50px;
-      -webkit-user-select: none;
+    -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -253,34 +257,34 @@ span, h2 {
     h1 {
         font-size: 2.5rem;
     }
-    h2{
+
+    h2 {
         font-size: 1.5rem;
     }
-    #printResult, .explanation{
+
+    #printResult, .explanation {
         font-size: 1.7rem;
-        margin-bottom:5px;
+        margin-bottom: 5px;
         margin-top: 0px;
     }
-    #printcounter{
+
+    #printcounter {
         font-size: 1.9rem;
     }
+
     #printResult {
         margin-top: 15px;
     }
+
     #character {
         margin-top: -60px;
     }
 
-    .imageStatic {
-        width: 300px;
+    #titleImg {
+        width: 25px;
     }
 
-
-    .imageShame {
-        width: 300px;
-    }
-
-    .imageHappy {
+    .imageStatic, .imageShame, .imageHappy {
         width: 300px;
     }
 

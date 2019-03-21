@@ -60,7 +60,7 @@ function onClickHand(event) {
         }
         //YOU LOOSE
     } else {
-        msg = 'The candy was in the ' + computerDecision + ' hand';
+        msg = 'The candy was in the ' + computerDecision + ' hand !';
         switch (computerDecision) {
             case 'right':
                 rightHand.classList.add('missingCandyRight');
