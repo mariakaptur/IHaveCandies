@@ -14,4 +14,4 @@ Future modifications :
 
 The <a href="https://heypik.com/images/cute-cartoon-dog_7SU44FX.html?keyword=cute-cartoon-dog">dog image</a> that I modified for my project : Free images by <a href="https://heypik.com" >https://heypik.com</a> 
 
-The happy and the sad versions of the dog are my creations in Adobe Illustrator based on the original picture.
+The happy and the sad versions of the dog are my creations (Adobe Illustrator) based on the original picture.
