@@ -90,8 +90,8 @@ span {
 }
 
 .hands div {
-    background-color: salmon;
-
+    background-color: transparent;
+    opacity: 0;
     width: 80px;
     height: 80px;
     border-radius: 50px;
@@ -261,7 +261,16 @@ span {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
+
+    .imageStatic, .imageShame, .imageHappy {
+        max-width: 300px;
+    }
+
+    #character {
+        margin-top: -75px;
+    }
+
     h1 {
         font-size: 3rem;
         margin-bottom: 0;
@@ -280,41 +289,8 @@ span {
         margin: 0;
     }
 
-}
-
-
-
-@media screen and (max-width: 480px) {
     #hands {
-        top: 370px;
-    }
-
-    #leftHand {
-        margin-right: 100px;
-    }
-
-    #rightHand {
-        margin-left: 100px;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    #hands {
-        top: 350px;
-    }
-
-    #leftHand {
-        margin-right: 90px;
-    }
-
-    #rightHand {
-        margin-left: 90px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    #hands {
-        top: 320px;
+        top: 270px;
     }
 
     #leftHand {
@@ -326,30 +302,3 @@ span {
     }
 }
 
-@media screen and (max-width: 380px) {
-    #hands {
-        top: 300px;
-    }
-
-    #leftHand {
-        margin-right: 50px;
-    }
-
-    #rightHand {
-        margin-left: 50px;
-    }
-}
-
-@media screen and (max-width: 340px) {
-    #hands {
-        top: 280px;
-    }
-
-    #leftHand {
-        margin-right: 30px;
-    }
-
-    #rightHand {
-        margin-left: 30px;
-    }
-}
