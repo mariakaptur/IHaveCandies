@@ -98,7 +98,7 @@ function onClickHand(event) {
 
     function showCounter() {
         printCounter.classList.remove('hide');
-        interval_id = window.setInterval(setCounter, 500);
+        interval_id = window.setInterval(setCounter, 1000);
         setCounter();
     }
 
