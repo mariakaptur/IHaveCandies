@@ -49,11 +49,12 @@ function onClickHand(event) {
         msg = 'There were no candies at all !';
         rightHand.className = '';
         leftHand.className = '';
-        dogImg.classList.add('imageShame');
+        dogImg.classList.add('imageSad');
 
         //YOU WIN
     } else if (computerDecision === hand) {
         won = true;
+        dogImg.classList.add('imageHappy');
         numberCandies.classList.remove('hide');
         candyCount.textContent = (candiesCounter += 1);
         switch (hand) {
@@ -71,10 +72,12 @@ function onClickHand(event) {
         msg = 'The candy was in the ' + computerDecision + ' paw !';
         switch (computerDecision) {
             case 'right':
+                dogImg.classList.add('imageWasRight');
                 rightHand.classList.add('missingCandyRight');
                 rightHand.removeEventListener('click', onClickHand);
                 break;
             case 'left':
+                dogImg.classList.add('imageWasLeft');
                 leftHand.classList.add('missingCandyLeft');
                 leftHand.removeEventListener('click', onClickHand);
                 break;
@@ -95,7 +98,7 @@ function onClickHand(event) {
 
     function showCounter() {
         printCounter.classList.remove('hide');
-        interval_id = window.setInterval(setCounter, 1000);
+        interval_id = window.setInterval(setCounter, 500);
         setCounter();
     }
 
