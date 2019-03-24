@@ -98,7 +98,7 @@ function onClickHand(event) {
 
     function showCounter() {
         printCounter.classList.remove('hide');
-        interval_id = window.setInterval(setCounter, 1000);
+        interval_id = window.setInterval(setCounter, 833);
         setCounter();
     }
 
@@ -112,7 +112,7 @@ function onClickHand(event) {
         explanation.classList.add('hide');
         $('.instruction').fadeOut('slow');
         counter = 3;
-    }, 3100);
+    }, 2600);
 
 
     function setCounter() {
