@@ -3,29 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Which hand game</title>
+    <title>Guess Which Hand game</title>
     <link href="https://fonts.googleapis.com/css?family=Quando|Mallanna" rel="stylesheet">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <main>
-    <h1>Guess which hand <img id="titleImg" src="img/candy_right.png"</h1>
-    <h2>Click on my paw 🐾 and test your luck !</h2>
-    <div id="character">
+    <h1>In which paw <img id="titleImg" src="img/candy_right.png"> ?</h1>
+    <span class="instruction">Click on my paw 🐾 and test your luck !</span>
 
-        <div id="hands" class="hands">
-            <div id="leftHand"></div>
-            <div id="rightHand"></div>
+    <div class="container-fluid">
+
+        <div class="row align-items-center">
+
+            <div class="col-sm-3 col-xs-12 text-sm-right order-sm-1">
+                <p id="numberTries" class="hide">
+                    <span>Tries : </span>
+                    <span id="clickCount"><strong>''</strong></span>
+                </p>
+            </div>
+
+            <div class="col-sm-3 col-xs-12 text-sm-left text-xs-center order-sm-3 ">
+                <p id="numberCandies" class="hide">
+                    <span>Candies : </span>
+                    <span id="candyCount"><strong>''</strong></span>
+                </p>
+            </div>
+
+            <div class="col-sm-6 col-xs-12 align-items-top order-sm-2">
+
+                <div id="character">
+                    <div id="hands" class="hands">
+                        <div id="leftHand"></div>
+                        <div id="rightHand"></div>
+                    </div>
+
+                    <div id="dogImg" class="imageStatic"></div>
+
+                    <p id="printResult" class="hide">''</p>
+                    <p id="explanation"><span class="explanation hide">''</span> <span id="printCounter"
+                                                                                       class="hide"><strong>''</strong></span>
+                    </p>
+                </div>
+            </div>
+
+
         </div>
-        <div id="dogImg" class="imageStatic"></div>
-        <p id="printResult" class="hide">''</p>
-        <p id="explanation"><span class="explanation hide">''</span> <span id="printCounter" class="hide"><strong>''</strong></span></p>
     </div>
 
 </main>
-<script src="js/jquery-3.3.1.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 <script src="js/index.js"></script>
 </body>
 </html>

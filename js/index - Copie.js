@@ -144,6 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
     printResult = document.querySelector('#printResult');
     explanation = document.querySelector('#explanation');
     printCounter = document.querySelector('#printCounter');
+
     //compteur = document.querySelector('#compteur');
 
 

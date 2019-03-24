@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    font-size: 2rem;
+    font-size: 2em;
     text-align: center;
     font-family: 'Mallanna', sans-serif;
     color: #404040;
@@ -13,19 +13,23 @@ body {
 }
 
 h1 {
-
     font-family: 'Quando', serif;
     font-weight: normal;
+    font-size: 3.5rem;
+}
+
+#numberTries span, #numberCandies span {
+    font-size: 2.5rem;
 }
 
 #printResult {
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 2.2rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-#printCounter {
+#printCounter, #clickCount, #candyCount {
     font-weight: bold;
     font-size: 2rem;
 }
@@ -34,18 +38,22 @@ h1 {
     margin: 0;
 }
 
-span, h2 {
+
+span {
     font-size: 1.8rem;
     padding-bottom: 0;
 }
 
+.instruction {
+    font-size: 2rem;
+    padding: 25px 0;
+}
+
 #character {
-    margin-top: -50px;
+    margin-top: -60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
 
 #titleImg {
@@ -53,7 +61,7 @@ span, h2 {
 }
 
 .imageStatic, .imageShame, .imageHappy {
-    width: 400px;
+    max-width: 100%;
 
 }
 
@@ -74,9 +82,9 @@ span, h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    min-width: 400px;
+    max-width: 100%;
     height: 100%;
-    top: 350px;
+    top: 390px;
     z-index: 1;
     position: relative;
 }
@@ -95,14 +103,14 @@ span, h2 {
 }
 
 #leftHand {
-    margin-right: 100px;
+    margin-right: 110px;
     content: url("../img/candy_left.png");
     opacity: 0;
     z-index: 2;
 }
 
 #rightHand {
-    margin-left: 100px;
+    margin-left: 110px;
     content: url("../img/candy_right.png");
     opacity: 0;
     z-index: 2;
@@ -253,57 +261,17 @@ span, h2 {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 576px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
-    h2 {
-        font-size: 1.5rem;
+    .instruction {
+        font-size: 1.8rem;
     }
 
-    #printResult, .explanation {
-        font-size: 1.7rem;
-        margin-bottom: 5px;
-        margin-top: 0px;
-    }
-
-    #printcounter {
-        font-size: 1.9rem;
-    }
-
-    #printResult {
-        margin-top: 15px;
-    }
-
-    #character {
-        margin-top: -60px;
-    }
-
-    #titleImg {
-        width: 25px;
-    }
-
-    .imageStatic, .imageShame, .imageHappy {
-        width: 300px;
-    }
-
-    #hands {
-
-        top: 270px;
-    }
-
-    .hands div {
-        width: 70px;
-        height: 70px;
-    }
-
-    #leftHand {
-        margin-right: 70px;
-    }
-
-    #rightHand {
-        margin-left: 70px;
+    #numberTries span, #numberCandies span {
+        font-size: 2rem;
     }
 
 }
