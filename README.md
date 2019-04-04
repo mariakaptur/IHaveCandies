@@ -3,9 +3,7 @@
 <a href="https://mariekaptur.github.io/IHaveCandies/">Play the game (GitHub Pages)</a>
 
 A game made using JavaScript, HTML and CSS. 
-```
-For instance, for desktop only.
-```
+
 Future modifications : 
 - Add UI tutorial animation (to encourage the user clicking on dog's paws);
 - Add an indicator of % of luck
